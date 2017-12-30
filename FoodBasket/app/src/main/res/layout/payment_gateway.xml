@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="187dp"
+    android:theme="@android:style/Theme.Holo.Dialog"
+    android:background="@drawable/pay">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Card Details"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#0000ff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:textColor="#000000"
+        android:inputType="numberDecimal"
+        android:id="@+id/cardno"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiration Date (mm/dd/yyyy)"
+        android:inputType="date"
+        android:textColor="#000000"
+        android:id="@+id/expirydate"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="57dp">-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Expiration Date"-->
+    <!--android:textColor="#000000"/>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5">-->
+    <!--<DatePicker-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!---->
+    <!--android:endYear="2100"-->
+    <!--android:startYear="1900" >-->
+    <!--</DatePicker>-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVC"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:id="@+id/cvc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/btn_cancel_pay"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:id="@+id/btn_confirm_pay"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
